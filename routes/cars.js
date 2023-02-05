@@ -8,10 +8,10 @@ module.exports = router;
 // create a new record and save
 router.post('/new', async (req, res) => {
     const data = new Races({
-        diverName: req.body.name,
-        vehicleType: req.body.vehicle,
-        vehicleNumber: req.body.number,
-        wonRaces: req.body.wins,
+        name: req.body.name,
+        vehicle: req.body.vehicle,
+        number: req.body.number,
+        wins: req.body.wins,
     });
     try {
         console.log("trying to post")
@@ -29,6 +29,7 @@ console.log("we are here")
     try {
         console.log("trying to fecth")
         const data = await Races.find();
+        console.log(data)
         res.status(200).json(data);
     } catch (error) {
         console.log("error")
@@ -49,12 +50,12 @@ router.patch('/:id', async (req, res) => {
     }
 });
 // D - Soft delete vehicle history
-router.delete('/:id', async (req, res) => {
+router.delete('/id', async (req, res) => {
     try {
         const id = req.params.id;
 
         const data = await Races.findByIdAndDelete(id);
-        res.status(204).json({ message: `The Race named ${data.name} has been deleted` });
+        res.status(200).json({ message: `The Race named ${data.name} has been deleted` });
     } catch (error) {
         res.status(404).json({ message: error.message });
     }

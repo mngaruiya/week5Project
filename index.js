@@ -6,7 +6,7 @@ const carsRoutes = require('./routes/cars');
 // const indexRoutes = require('./routes/start');
 
 // Variables
-const databaseConn="mongodb+srv://pro:0723557337@carraceproject.0smm9nm.mongodb.net/test?retryWrites=true&w=majority";
+const databaseConn="mongodb+srv://PRO:0723557337@cars.ixcz0fo.mongodb.net/test";
 
 const port = process.env.PORT || 8700;
 
