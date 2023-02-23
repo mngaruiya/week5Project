@@ -11,3 +11,5 @@ Deployed the app to render.
 This project is licensed under the [MIT] License.
 ## Project Setup Instructions 
 Do not delete or ammend without our authorisation 
+## Contact Information
+If you have any question or contributions, please call us on +25471...102
