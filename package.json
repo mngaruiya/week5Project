@@ -129,11 +129,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node .",
  
-    "start": "node your-script.js"
+ 
 
-    "dev": "nodemon index.js"
+    "dev": "nodemon ."
   },
   "repository": {
     "type": "git",
